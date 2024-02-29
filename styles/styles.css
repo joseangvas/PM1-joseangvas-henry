@@ -1,0 +1,488 @@
+:root {
+
+  /* Tipografía */
+  --fuente_principal: 'monserrat, sans-serif';
+
+  /* Colores */
+  --azul: #3b82f6;
+  --azul-oscuro: #2748a3;
+  --blanco: #ffffff;
+  --gris-claro: #ebe6e6;
+  --gris: #c4cdd9;
+  --gris-oscuro: #64748b;
+  --negro: #000;
+  --verde: #4CB8B3;
+  --rosa: #F53756;
+  --amarillo: #FEF46D;
+  --morado: #752F97;
+  --negro: #000000;
+
+  /* Tamaños de Media Querys */
+  --telefonos: 480px;
+  --tablet: 768px;
+  --desktop: 992px;
+  --desktopXL: 1200px;
+}
+
+
+/* *********************/
+/* G E N E R A L E S */
+/* *********************/
+
+html {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 5% 5%;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.fijar {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.sombra {
+    box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
+    background-color: var(--blanco);
+    padding: 4rem;
+    border-radius: 1.2rem;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Lato", sans-serif;
+    background-color: var(--gris-claro);
+}
+
+main {
+  margin-top: 5px;
+}
+
+/*  ESTILOS DE BOTONES  */
+
+.boton {
+  background-color: var(--azul);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  border-radius: .5rem;
+  width: 90%;
+  text-align: center;
+  border: none;
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .boton {
+    width: auto;
+  }
+}
+
+
+
+/* ******************** */
+/* seccion H E A D E R */
+/* ******************** */
+
+header {
+  background-image: url(../assets/images/Banner.jpg);
+  padding: 10px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 100%;
+  border-radius: 6px;
+  height: 40rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: space-around;
+  list-style: none;
+  padding: 10PX;
+  text-decoration: none;
+  margin: 12px;
+}
+
+.op-menu {
+  margin: 30px;
+  padding: 15px;
+  text-decoration: none;
+  color: var(--blanco);
+  border-radius: 4px;
+  background-color: rgb(10, 121, 180);
+  justify-content: space-between;
+  align-items: bottom;
+}
+
+.op-menu:hover {
+  background-color: var(--azul-oscuro);
+  cursor: pointer;
+}
+
+
+section {
+  background-color: rgb(199, 198, 198);
+  margin: 2rem;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 1px 1px 10px rgb(74, 79, 79);
+  border-radius: 8px;
+}
+
+h1 {
+  font-family: Tahoma, 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 10px;
+  color: var(--amarillo);
+}
+
+h3 {
+  padding: 5px;
+}
+
+
+.titulo {
+  font-size: 2.5rem;
+  color: blue;
+}
+
+
+/* *********************/
+/* seccion S O B R E  M I */
+/* *********************/
+
+.sobremi {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;  
+  font-size: 34px;
+  font-weight: bold;
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+.sobremi .contenedor-foto {
+  max-width: 500px;
+  margin-left: 40px;
+}
+
+.sobremi .contenedor-foto img {
+  padding: 20px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  justify-content: center;
+}
+
+.contenedor-texto {
+  margin-right: 40px;
+}
+
+.sobremi .titulo-seccion {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+
+
+.sobremi h2 span {
+  color: #d70d43;
+}
+
+.sobremi h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 10px;
+  color: var(--azul);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.sobremi p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 18px;
+  line-height: 22px;
+  color: #292727;
+  margin-bottom: 15px;
+}
+
+.sobremi a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  border-radius: 15px;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  margin-top: 30px;
+  transition: 0.5s;
+  font-size: 2rem;
+
+}
+
+.sobremi a:hover {
+  background-color: var(--azul);
+}
+
+img {
+  width: 7rem;
+}
+
+img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
+/* ***************************************/
+/* seccion M I S  T E C N O L O G I A S */
+/* **************************************/
+
+.tecnologias {
+  display: grid;
+  gap: 10px;  
+  font-size: 23px;
+  font-weight: bold;
+  margin: 13px 0;
+  letter-spacing: 2px;
+}
+
+.tecnoimagen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: space-around;
+  list-style: none;
+  padding: 10PX;
+  text-decoration: none;
+  margin: 30px;
+}
+
+
+/* ***************************************/
+/* seccion M I S  A C T I V I D A D E S */
+/* **************************************/
+
+.actividades {
+  display: grid;
+  gap: 10px;  
+  font-size: 23px;
+  font-weight: bold;
+  margin: 13px 0;
+  letter-spacing: 2px;
+}
+
+.formulario {
+  background-color: var(--gris-oscuro);
+  width: min(60rem, 100%);  /** Utilizar el valor más pequeño **/
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.formulario fieldset {
+  border:none;
+}
+
+.formulario legend {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: var(--blanco);
+}
+
+.campo {
+  margin-bottom: 1rem;
+}
+
+.campo label {
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: .5rem;
+  display: block;
+  text-align: left;
+  font-size: 16px;
+}
+
+.campo textarea {
+  height: 10rem;
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 15px;
+}
+
+#add_activity {
+  display: block;
+  width: 27%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+}
+
+#add_activity:hover {
+  background-color: var(--azul);
+  cursor: pointer;
+}
+
+.imagenes {
+  height: 500px;
+  background-color: var(--blanco);;
+}
+
+/*  EFECTOS  DE  IMAGENES  */
+.imagen {
+    width: 150px;
+    height: 150px;
+    /* filter: grayscale(); */
+    border-radius: 12px;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+}
+
+.imagen:hover{
+    transform: scale(1.1);
+    filter: none;
+    background-color: rgb(77, 77, 77);
+}
+
+.imageng {
+  width: 300px;
+  height: 500px;
+  filter: grayscale();
+  border-radius: 12px;
+  border: 2px solid black;
+  transition: transform 0.3s ease;
+  margin: 3rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 28rem;
+  height: 26rem;
+  background-color: #222;
+  margin: 1rem;
+  gap: 1rem;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 1px 1px 10px rgb(9, 91, 109);
+  color: #edebeb;
+  border-radius: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  img {
+    margin: 15px;
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.msgAct {
+  font-size: 2rem;
+  color: var(--azul);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+/* Utilidades Varias */
+.w-sm-100 {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.alinear-derecha {
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .w-sm-100 {
+    width: auto;
+  }
+}
+
+
+/* ********************* */
+/* seccion F O O T E R */
+/* ******************** */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--azul-oscuro);
+  font-size: 1.8rem;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

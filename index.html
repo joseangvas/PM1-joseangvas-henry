@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  type="text/css" rel="stylesheet" href="./styles/reset.css">
+        <link  type="text/css" rel="stylesheet" href="./styles/styles.css">
+        <title>Mi Portafolio</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Mi Portafolio</h1>
+        </header>
+
+        <nav>
+            <ul class="menu">
+                <li><a class="op-menu" href="#sobremi">Sobre Mi</a></li>
+                <li><a class="op-menu" href="#tecnologias">Tecnologías</a></li>
+                <li><a class="op-menu" href="#actividades">Actividades</a></li>
+            </ul>
+        </nav>
+        
+        <main class="container">
+            <!--  SECCION SOBRE MI PERFIL  -->
+            <section id="sobremi" class="sobremi sombra">
+                <div class="contenedor-foto">
+                    <img src="/assets/images/Foto Carnet.jpg" alt="Foto Carnet" />
+                </div>
+                
+                <div class="contenedor-texto">
+                    <p class="titulo-seccion">Sobre Mi</p>
+                    <h2>Hola, Soy <span>José Angel Vásquez</span></h2>
+                    <h3>Desarrollador Web</h3>
+                    <p>
+                    Mi experiencia en el área de programación de Sistemas de Escritorio Windows me ha facilitado el aprendizaje del Desarrollo Web y actualmente me siento muy motivado y ansioso por aprender cada día nuevas tecnologías en este mundo tan fascinante.
+                    </p>
+                    <p>
+                    Soy una persona proactiva, comprometida y comunicativa, lo que me permite establecer una sólida colaboración con los miembros de un equipo de trabajo y otros departamentos.
+                    </p>
+                    <p>
+                    Mis habilidades para la resolución de problemas y mi capacidad para adaptarme rápidamente a diversas situaciones han sido fundamentales para lograr resultados sobresalientes en mi trayectoria profesional. 
+                    </p>
+                    <p>
+                    Además, mi enfoque creativo y mi organización meticulosa me permiten abordar los desafíos con una perspectiva clara y garantizar una ejecución eficiente en cada proyecto.
+                    </p>
+                    <a href="./docs/curriculum.html">Descargar CV</a>
+                </div>
+            </section>
+            
+            <!--  SECCION DE TECNOLOGIAS FAVORITAS  -->
+            <section id="tecnologias" class="tecnologias sombra">
+                <h2 class="titulo">Mis Tecnologías Favoritas</h2>
+                
+                <article>
+                    <div class="tecnoimagen">
+                        <div>
+                            <h3>HTML</h3>
+                            <a href="https://es.wikipedia.org/wiki/HTML" target="_blank">
+                                <img class="imagen" src="./assets/images/html.png" alt="Imagen de React">
+                            </a>
+                        </div>
+                        <div>
+                            <h3>CSS</h3>
+                            <a href="https://es.wikipedia.org/wiki/CSS" target="_blank">
+                                <img class="imagen" src="./assets/images/css.png" alt="Imagen de React">
+                            </a>
+                        </div>
+                        <div>
+                            <h3>Javascript</h3>
+                            <a href="https://es.wikipedia.org/wiki/JavaScript" target="_blank">
+                                <img class="imagen" src="./assets/images/javascript.png" alt="Imagen de React">
+                            </a>
+                        </div>
+                        <div>
+                            <h3>React</h3>
+                            <a href="https://es.wikipedia.org/wiki/React" target="_blank">
+                                <img class="imagen" src="./assets/images/react1.png" alt="Imagen de React">
+                            </a>
+                        </div>
+                        <div>
+                            <h3>Python</h3>
+                            <a href="https://es.wikipedia.org/wiki/Python" target="_blank">
+                                <img class="imagen" src="./assets/images/python1.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <h3>SQL Server</h3>
+                            <a href="https://es.wikipedia.org/wiki/Microsoft_SQL_Server" target="_blank">
+                                <img class="imagen" src="./assets/images/sql1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            
+            <!--  SECCION DE INGRESO DE ACTIVIDADES FAVORITAS  --> 
+            <section id="actividades" class="actividades sombra">
+                <form class="formulario">
+                    <fieldset>
+                        <legend>Mis Actividades Favoritas</legend>
+
+                        <div class="contenedor-campos">
+                            <div class="campo">
+                                <label for="">Titulo</label>
+                                <input type="text" id="title" class="input-text" placeholder="Nombre de Actividad">
+                            </div>
+                            
+                            <div class="campo">
+                                <label for="">Descripción</label>
+                                <textarea
+                                    id="description" 
+                                    class="input-text" 
+                                    name="" 
+                                    id="description" 
+                                    cols="20" 
+                                    placeholder="Ingresa la Descripción de la Actividad"
+                                >
+                                </textarea>
+                            </div>
+
+                            <div class="campo">
+                                <label for="">URL de Imagen</label>
+                                <input type="url" id="img_url" class="input-text" placeholder="Enlace URL de la Imagen">
+                            </div>
+
+                            <div class="alinear-derecha flex">
+                                <input type="submit" id="add_activity" class="boton w-sm-100" value="Agregar Actividad">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <!--  SECCION DE IMAGENES DE ACTIVIDADES FAVORITAS  -->
+                <div class="card-container">
+                    <p class="msgAct">No hay actividades</p>
+                </div>
+            </section>
+        </main>
+        
+        <script src="/scripts/index.js"></script>
+    </body>
+    
+    <footer class="footer sombra">
+        <p>Realizado por: José A. Vásquez - &copy;Todos los Derechos Reservados</p>
+    </footer>
+</html>
+        
