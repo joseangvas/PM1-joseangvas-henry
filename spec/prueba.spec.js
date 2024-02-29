@@ -3,3 +3,7 @@ describe("demo", function () {
     expect(4 + 2).toBe(6);
   });
 });
+
+describe('Ejemplo de Suite de Pruebas', () => {
+  
+})
